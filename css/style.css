@@ -1,0 +1,81 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	 scroll-behavior: smooth; 
+}
+ 
+body {
+    font-family: sans-serif;
+}
+
+.contenedor{
+	margin: 0 auto;
+	width: 100%;
+}
+ 
+.contenedor-banner {
+    position: relative;
+}
+ 
+.banners {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+	list-style: none;
+}
+ 
+.banner {
+    width: 100vw;
+    flex-shrink: 0;
+    animation-name: banner;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+ 
+.banner img {
+    width: 100%;
+    vertical-align: top;
+}
+ 
+.descripcion-banner {
+	height: 60vw;
+	background-color: rgba(0, 0, 0, 0.5);  
+	text-align: center;
+    color: white;
+    text-shadow: 1px 1px black;
+    font-size: 2vw;
+    position: absolute;
+	padding: 8vw;                          
+}
+ 
+
+@keyframes banner {
+    0% { 
+		transform: translateX(0); 
+	}
+    
+	20% { 
+		transform: translateX(0); 
+	}
+
+	40%{
+		transform: translateX(0); 
+	}
+ 
+    60% { 
+		transform: translateX(-100%); 
+	}
+
+    80% { 
+		transform: translateX(-100%); 
+	}
+
+	100% { 
+		transform: translateX(-100%); 
+	}
+}
